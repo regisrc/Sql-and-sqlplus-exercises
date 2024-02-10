@@ -155,3 +155,29 @@ INSERT INTO Filmes (Id, Nome, DataLancamento, Valor, Genero) VALUES
 
 INSERT INTO Filmes (Id, Nome, DataLancamento, Valor, Genero) VALUES
 (50, 'O Pianista', TO_DATE('2002-01-24', 'YYYY-MM-DD'), 14.25, 'Biografia, Drama, Guerra');
+
+Selecione todos os filmes da tabela "Filmes".
+Selecione os filmes lançados após o ano de 2000.
+Selecione os filmes lançados entre os anos de 1990 e 2000.
+Selecione os filmes que custam mais de $15.
+Selecione os filmes do gênero "Ação".
+Selecione os filmes do gênero "Drama" ou "Suspense".
+Selecione os filmes cujos nomes começam com a letra "O".
+Selecione os filmes ordenados por nome em ordem alfabética.
+Selecione os 10 primeiros filmes da tabela.
+Selecione os filmes agrupados por gênero.
+Selecione a contagem total de filmes na tabela.
+Selecione a data de lançamento mais antiga na tabela.
+Selecione o valor médio dos filmes na tabela.
+Selecione os filmes ordenados por data de lançamento em ordem decrescente.
+Selecione os filmes lançados no ano de 1999 com um valor superior a $10.
+Selecione os filmes cujo nome contenha a palavra "Senhor".
+Selecione os filmes cujo gênero contenha a palavra "Drama".
+Selecione os filmes lançados no primeiro trimestre do ano.
+Selecione os filmes lançados nos últimos 5 anos.
+Selecione os filmes cujo nome comece com a letra "A" e termine com a letra "o".
+Selecione os filmes cujo valor esteja entre $10 e $20.
+Selecione os filmes cuja data de lançamento seja um dia de semana (de segunda a sexta-feira).
+Selecione os filmes agrupados por ano de lançamento, mostrando a quantidade de filmes lançados em cada ano.
+Selecione os filmes cujo nome tenha pelo menos 10 caracteres.
+Selecione os filmes que não tenham um gênero especificado.
