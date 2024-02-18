@@ -181,3 +181,34 @@ Selecione os filmes cuja data de lançamento seja um dia de semana (de segunda a
 Selecione os filmes agrupados por ano de lançamento, mostrando a quantidade de filmes lançados em cada ano.
 Selecione os filmes cujo nome tenha pelo menos 10 caracteres.
 Selecione os filmes que não tenham um gênero especificado.
+
+-- 1. SELECT * FROM Filmes;
+-- 2. SELECT * FROM Filmes WHERE EXTRACT(YEAR FROM DataLancamento) > 2000;
+-- 3. SELECT * FROM Filmes WHERE EXTRACT(YEAR FROM DataLancamento) BETWEEN 1990 AND 2000;
+-- 4. SELECT * FROM Filmes WHERE Valor > 15;
+-- 5. SELECT * FROM Filmes WHERE Genero LIKE '%Ação%';
+-- 6. SELECT * FROM Filmes WHERE Genero LIKE '%Drama%' OR Genero LIKE '%Suspense%';
+-- 7. SELECT * FROM Filmes WHERE Nome LIKE 'O%';
+-- 8. SELECT * FROM Filmes ORDER BY Nome;
+-- 9. SELECT * FROM Filmes where rownum <= 10;
+-- 10. SELECT Genero FROM Filmes GROUP BY Genero;
+-- 11. SELECT COUNT(*) FROM Filmes;
+-- 12. SELECT MIN(DataLancamento) FROM Filmes;
+-- 13. SELECT AVG(Valor) FROM Filmes;
+-- 14. SELECT * FROM Filmes ORDER BY DataLancamento DESC;
+-- 15. SELECT * FROM Filmes WHERE EXTRACT(YEAR FROM DataLancamento) = 1999 AND Valor > 10;
+-- 16. SELECT * FROM Filmes WHERE Nome LIKE '%Senhor%';
+-- 17. SELECT * FROM Filmes WHERE Genero LIKE '%Drama%';
+-- 18. SELECT * FROM Filmes WHERE EXTRACT(MONTH FROM DataLancamento) BETWEEN 1 AND 3;
+-- 18*. SELECT * FROM Filmes WHERE DataLancamento BETWEEN '01-01-2019' AND '01-03-2019'
+-- 19. SELECT * FROM Filmes WHERE EXTRACT(YEAR FROM DataLancamento) BETWEEN (EXTRACT(YEAR FROM sysdate) - 5) AND EXTRACT(YEAR FROM sysdate);
+-- 19*. SELECT * FROM Filmes WHERE EXTRACT(YEAR FROM DataLancamento) BETWEEN 2019 AND 2024;
+-- 20. SELECT * FROM Filmes WHERE Nome LIKE 'A%o';
+-- 20*. SELECT * FROM Filmes WHERE Nome LIKE 'A%' AND Nome LIKE '%o';
+-- 21. SELECT * FROM Filmes WHERE Valor BETWEEN 10 AND 20;
+-- 22. SELECT * FROM Filmes WHERE TO_CHAR(DataLancamento, 'Dy') NOT IN ('Sab', 'Dom');
+-- 23. SELECT EXTRACT(YEAR FROM DataLancamento), COUNT(EXTRACT(YEAR FROM DataLancamento)) FROM Filmes GROUP BY EXTRACT(YEAR FROM DataLancamento);
+-- 24. SELECT * FROM Filmes WHERE Length(Nome) >= 10;
+-- 25. SELECT * FROM Filmes WHERE Genero IS NULL;
+
+
